@@ -1,0 +1,13 @@
+version: '2'
+services:
+  tree:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: tree
+    ports:
+      - 8888:8888
+    networks:
+      - tree-network
+networks:
+  tree-network:
