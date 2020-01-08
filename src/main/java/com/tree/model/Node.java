@@ -20,6 +20,9 @@ public class Node<T> implements Serializable {
 
     private List<Node<T>> children = new ArrayList<>();
 
+    public Node() {
+    }
+
     public Node(long nodeId, T data) {
         this.data = data;
         this.nodeId = nodeId;

@@ -22,7 +22,7 @@ public class TreeController {
     @GetMapping("/trees")
     public ResponseEntity<Node<String>> getTree() {
 
-        Node<String> root = treeService.createTree();
+        Node<String> root = treeService.getTreeFromFile();
         return new ResponseEntity<>(root, HttpStatus.OK);
 
     }

@@ -5,8 +5,10 @@ services:
       context: ./
       dockerfile: Dockerfile
     image: tree
+    volumes:
+      - ./sample/tree.json:/usr/src/tree-app/sample/tree.json
     ports:
-      - 8888:8888
+      - 8887:8887
     networks:
       - tree-network
 networks:
